@@ -1,0 +1,2267 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20222.22.0812.0353                               -->
+<workbook locale='en_US' original-version='18.1' source-build='2022.2.1 (20222.22.0812.0353)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='data-by-day' inline='true' name='federated.1ds8l6v0rheg0c18onai80nznepf' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='data-by-day' name='textscan.1fpnyt813j3bnj18fzvae0begf7z'>
+            <connection class='textscan' directory='/Users/chenmeng/Desktop/NYU_Courses/2022 Fall/Health Care/Final Proj' filename='data-by-day.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1fpnyt813j3bnj18fzvae0begf7z' name='data-by-day.csv' table='[data-by-day#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+            <column datatype='date' name='date_of_interest' ordinal='0' />
+            <column datatype='integer' name='CASE_COUNT' ordinal='1' />
+            <column datatype='integer' name='PROBABLE_CASE_COUNT' ordinal='2' />
+            <column datatype='integer' name='HOSPITALIZED_COUNT' ordinal='3' />
+            <column datatype='integer' name='DEATH_COUNT' ordinal='4' />
+            <column datatype='integer' name='PROBABLE_DEATH_COUNT' ordinal='5' />
+            <column datatype='integer' name='CASE_COUNT_7DAY_AVG' ordinal='6' />
+            <column datatype='integer' name='ALL_CASE_COUNT_7DAY_AVG' ordinal='7' />
+            <column datatype='integer' name='HOSP_COUNT_7DAY_AVG' ordinal='8' />
+            <column datatype='integer' name='DEATH_COUNT_7DAY_AVG' ordinal='9' />
+            <column datatype='integer' name='ALL_DEATH_COUNT_7DAY_AVG' ordinal='10' />
+            <column datatype='integer' name='BX_CASE_COUNT' ordinal='11' />
+            <column datatype='integer' name='BX_PROBABLE_CASE_COUNT' ordinal='12' />
+            <column datatype='integer' name='BX_HOSPITALIZED_COUNT' ordinal='13' />
+            <column datatype='integer' name='BX_DEATH_COUNT' ordinal='14' />
+            <column datatype='integer' name='BX_PROBABLE_DEATH_COUNT' ordinal='15' />
+            <column datatype='integer' name='BX_CASE_COUNT_7DAY_AVG' ordinal='16' />
+            <column datatype='integer' name='BX_PROBABLE_CASE_COUNT_7DAY_AVG' ordinal='17' />
+            <column datatype='integer' name='BX_ALL_CASE_COUNT_7DAY_AVG' ordinal='18' />
+            <column datatype='integer' name='BX_HOSPITALIZED_COUNT_7DAY_AVG' ordinal='19' />
+            <column datatype='integer' name='BX_DEATH_COUNT_7DAY_AVG' ordinal='20' />
+            <column datatype='integer' name='BX_ALL_DEATH_COUNT_7DAY_AVG' ordinal='21' />
+            <column datatype='integer' name='BK_CASE_COUNT' ordinal='22' />
+            <column datatype='integer' name='BK_PROBABLE_CASE_COUNT' ordinal='23' />
+            <column datatype='integer' name='BK_HOSPITALIZED_COUNT' ordinal='24' />
+            <column datatype='integer' name='BK_DEATH_COUNT' ordinal='25' />
+            <column datatype='integer' name='BK_PROBABLE_DEATH_COUNT' ordinal='26' />
+            <column datatype='integer' name='BK_CASE_COUNT_7DAY_AVG' ordinal='27' />
+            <column datatype='integer' name='BK_PROBABLE_CASE_COUNT_7DAY_AVG' ordinal='28' />
+            <column datatype='integer' name='BK_ALL_CASE_COUNT_7DAY_AVG' ordinal='29' />
+            <column datatype='integer' name='BK_HOSPITALIZED_COUNT_7DAY_AVG' ordinal='30' />
+            <column datatype='integer' name='BK_DEATH_COUNT_7DAY_AVG' ordinal='31' />
+            <column datatype='integer' name='BK_ALL_DEATH_COUNT_7DAY_AVG' ordinal='32' />
+            <column datatype='integer' name='MN_CASE_COUNT' ordinal='33' />
+            <column datatype='integer' name='MN_PROBABLE_CASE_COUNT' ordinal='34' />
+            <column datatype='integer' name='MN_HOSPITALIZED_COUNT' ordinal='35' />
+            <column datatype='integer' name='MN_DEATH_COUNT' ordinal='36' />
+            <column datatype='integer' name='MN_PROBABLE_DEATH_COUNT' ordinal='37' />
+            <column datatype='integer' name='MN_CASE_COUNT_7DAY_AVG' ordinal='38' />
+            <column datatype='integer' name='MN_PROBABLE_CASE_COUNT_7DAY_AVG' ordinal='39' />
+            <column datatype='integer' name='MN_ALL_CASE_COUNT_7DAY_AVG' ordinal='40' />
+            <column datatype='integer' name='MN_HOSPITALIZED_COUNT_7DAY_AVG' ordinal='41' />
+            <column datatype='integer' name='MN_DEATH_COUNT_7DAY_AVG' ordinal='42' />
+            <column datatype='integer' name='MN_ALL_DEATH_COUNT_7DAY_AVG' ordinal='43' />
+            <column datatype='integer' name='QN_CASE_COUNT' ordinal='44' />
+            <column datatype='integer' name='QN_PROBABLE_CASE_COUNT' ordinal='45' />
+            <column datatype='integer' name='QN_HOSPITALIZED_COUNT' ordinal='46' />
+            <column datatype='integer' name='QN_DEATH_COUNT' ordinal='47' />
+            <column datatype='integer' name='QN_PROBABLE_DEATH_COUNT' ordinal='48' />
+            <column datatype='integer' name='QN_CASE_COUNT_7DAY_AVG' ordinal='49' />
+            <column datatype='integer' name='QN_PROBABLE_CASE_COUNT_7DAY_AVG' ordinal='50' />
+            <column datatype='integer' name='QN_ALL_CASE_COUNT_7DAY_AVG' ordinal='51' />
+            <column datatype='integer' name='QN_HOSPITALIZED_COUNT_7DAY_AVG' ordinal='52' />
+            <column datatype='integer' name='QN_DEATH_COUNT_7DAY_AVG' ordinal='53' />
+            <column datatype='integer' name='QN_ALL_DEATH_COUNT_7DAY_AVG' ordinal='54' />
+            <column datatype='integer' name='SI_CASE_COUNT' ordinal='55' />
+            <column datatype='integer' name='SI_PROBABLE_CASE_COUNT' ordinal='56' />
+            <column datatype='integer' name='SI_HOSPITALIZED_COUNT' ordinal='57' />
+            <column datatype='integer' name='SI_DEATH_COUNT' ordinal='58' />
+            <column datatype='integer' name='SI_PROBABLE_DEATH_COUNT' ordinal='59' />
+            <column datatype='integer' name='SI_CASE_COUNT_7DAY_AVG' ordinal='60' />
+            <column datatype='integer' name='SI_PROBABLE_CASE_COUNT_7DAY_AVG' ordinal='61' />
+            <column datatype='integer' name='SI_ALL_CASE_COUNT_7DAY_AVG' ordinal='62' />
+            <column datatype='integer' name='SI_HOSPITALIZED_COUNT_7DAY_AVG' ordinal='63' />
+            <column datatype='integer' name='SI_DEATH_COUNT_7DAY_AVG' ordinal='64' />
+            <column datatype='integer' name='SI_ALL_DEATH_COUNT_7DAY_AVG' ordinal='65' />
+            <column datatype='integer' name='INCOMPLETE' ordinal='66' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1fpnyt813j3bnj18fzvae0begf7z' name='data-by-day.csv' table='[data-by-day#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+            <column datatype='date' name='date_of_interest' ordinal='0' />
+            <column datatype='integer' name='CASE_COUNT' ordinal='1' />
+            <column datatype='integer' name='PROBABLE_CASE_COUNT' ordinal='2' />
+            <column datatype='integer' name='HOSPITALIZED_COUNT' ordinal='3' />
+            <column datatype='integer' name='DEATH_COUNT' ordinal='4' />
+            <column datatype='integer' name='PROBABLE_DEATH_COUNT' ordinal='5' />
+            <column datatype='integer' name='CASE_COUNT_7DAY_AVG' ordinal='6' />
+            <column datatype='integer' name='ALL_CASE_COUNT_7DAY_AVG' ordinal='7' />
+            <column datatype='integer' name='HOSP_COUNT_7DAY_AVG' ordinal='8' />
+            <column datatype='integer' name='DEATH_COUNT_7DAY_AVG' ordinal='9' />
+            <column datatype='integer' name='ALL_DEATH_COUNT_7DAY_AVG' ordinal='10' />
+            <column datatype='integer' name='BX_CASE_COUNT' ordinal='11' />
+            <column datatype='integer' name='BX_PROBABLE_CASE_COUNT' ordinal='12' />
+            <column datatype='integer' name='BX_HOSPITALIZED_COUNT' ordinal='13' />
+            <column datatype='integer' name='BX_DEATH_COUNT' ordinal='14' />
+            <column datatype='integer' name='BX_PROBABLE_DEATH_COUNT' ordinal='15' />
+            <column datatype='integer' name='BX_CASE_COUNT_7DAY_AVG' ordinal='16' />
+            <column datatype='integer' name='BX_PROBABLE_CASE_COUNT_7DAY_AVG' ordinal='17' />
+            <column datatype='integer' name='BX_ALL_CASE_COUNT_7DAY_AVG' ordinal='18' />
+            <column datatype='integer' name='BX_HOSPITALIZED_COUNT_7DAY_AVG' ordinal='19' />
+            <column datatype='integer' name='BX_DEATH_COUNT_7DAY_AVG' ordinal='20' />
+            <column datatype='integer' name='BX_ALL_DEATH_COUNT_7DAY_AVG' ordinal='21' />
+            <column datatype='integer' name='BK_CASE_COUNT' ordinal='22' />
+            <column datatype='integer' name='BK_PROBABLE_CASE_COUNT' ordinal='23' />
+            <column datatype='integer' name='BK_HOSPITALIZED_COUNT' ordinal='24' />
+            <column datatype='integer' name='BK_DEATH_COUNT' ordinal='25' />
+            <column datatype='integer' name='BK_PROBABLE_DEATH_COUNT' ordinal='26' />
+            <column datatype='integer' name='BK_CASE_COUNT_7DAY_AVG' ordinal='27' />
+            <column datatype='integer' name='BK_PROBABLE_CASE_COUNT_7DAY_AVG' ordinal='28' />
+            <column datatype='integer' name='BK_ALL_CASE_COUNT_7DAY_AVG' ordinal='29' />
+            <column datatype='integer' name='BK_HOSPITALIZED_COUNT_7DAY_AVG' ordinal='30' />
+            <column datatype='integer' name='BK_DEATH_COUNT_7DAY_AVG' ordinal='31' />
+            <column datatype='integer' name='BK_ALL_DEATH_COUNT_7DAY_AVG' ordinal='32' />
+            <column datatype='integer' name='MN_CASE_COUNT' ordinal='33' />
+            <column datatype='integer' name='MN_PROBABLE_CASE_COUNT' ordinal='34' />
+            <column datatype='integer' name='MN_HOSPITALIZED_COUNT' ordinal='35' />
+            <column datatype='integer' name='MN_DEATH_COUNT' ordinal='36' />
+            <column datatype='integer' name='MN_PROBABLE_DEATH_COUNT' ordinal='37' />
+            <column datatype='integer' name='MN_CASE_COUNT_7DAY_AVG' ordinal='38' />
+            <column datatype='integer' name='MN_PROBABLE_CASE_COUNT_7DAY_AVG' ordinal='39' />
+            <column datatype='integer' name='MN_ALL_CASE_COUNT_7DAY_AVG' ordinal='40' />
+            <column datatype='integer' name='MN_HOSPITALIZED_COUNT_7DAY_AVG' ordinal='41' />
+            <column datatype='integer' name='MN_DEATH_COUNT_7DAY_AVG' ordinal='42' />
+            <column datatype='integer' name='MN_ALL_DEATH_COUNT_7DAY_AVG' ordinal='43' />
+            <column datatype='integer' name='QN_CASE_COUNT' ordinal='44' />
+            <column datatype='integer' name='QN_PROBABLE_CASE_COUNT' ordinal='45' />
+            <column datatype='integer' name='QN_HOSPITALIZED_COUNT' ordinal='46' />
+            <column datatype='integer' name='QN_DEATH_COUNT' ordinal='47' />
+            <column datatype='integer' name='QN_PROBABLE_DEATH_COUNT' ordinal='48' />
+            <column datatype='integer' name='QN_CASE_COUNT_7DAY_AVG' ordinal='49' />
+            <column datatype='integer' name='QN_PROBABLE_CASE_COUNT_7DAY_AVG' ordinal='50' />
+            <column datatype='integer' name='QN_ALL_CASE_COUNT_7DAY_AVG' ordinal='51' />
+            <column datatype='integer' name='QN_HOSPITALIZED_COUNT_7DAY_AVG' ordinal='52' />
+            <column datatype='integer' name='QN_DEATH_COUNT_7DAY_AVG' ordinal='53' />
+            <column datatype='integer' name='QN_ALL_DEATH_COUNT_7DAY_AVG' ordinal='54' />
+            <column datatype='integer' name='SI_CASE_COUNT' ordinal='55' />
+            <column datatype='integer' name='SI_PROBABLE_CASE_COUNT' ordinal='56' />
+            <column datatype='integer' name='SI_HOSPITALIZED_COUNT' ordinal='57' />
+            <column datatype='integer' name='SI_DEATH_COUNT' ordinal='58' />
+            <column datatype='integer' name='SI_PROBABLE_DEATH_COUNT' ordinal='59' />
+            <column datatype='integer' name='SI_CASE_COUNT_7DAY_AVG' ordinal='60' />
+            <column datatype='integer' name='SI_PROBABLE_CASE_COUNT_7DAY_AVG' ordinal='61' />
+            <column datatype='integer' name='SI_ALL_CASE_COUNT_7DAY_AVG' ordinal='62' />
+            <column datatype='integer' name='SI_HOSPITALIZED_COUNT_7DAY_AVG' ordinal='63' />
+            <column datatype='integer' name='SI_DEATH_COUNT_7DAY_AVG' ordinal='64' />
+            <column datatype='integer' name='SI_ALL_DEATH_COUNT_7DAY_AVG' ordinal='65' />
+            <column datatype='integer' name='INCOMPLETE' ordinal='66' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;zh_Hans_CN&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;¥&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;zh_CN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_of_interest</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date_of_interest]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>date_of_interest</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CASE_COUNT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CASE_COUNT]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>CASE_COUNT</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PROBABLE_CASE_COUNT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PROBABLE_CASE_COUNT]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>PROBABLE_CASE_COUNT</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HOSPITALIZED_COUNT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HOSPITALIZED_COUNT]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>HOSPITALIZED_COUNT</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DEATH_COUNT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DEATH_COUNT]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>DEATH_COUNT</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PROBABLE_DEATH_COUNT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PROBABLE_DEATH_COUNT]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>PROBABLE_DEATH_COUNT</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CASE_COUNT_7DAY_AVG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CASE_COUNT_7DAY_AVG]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>CASE_COUNT_7DAY_AVG</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ALL_CASE_COUNT_7DAY_AVG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ALL_CASE_COUNT_7DAY_AVG]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>ALL_CASE_COUNT_7DAY_AVG</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HOSP_COUNT_7DAY_AVG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HOSP_COUNT_7DAY_AVG]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>HOSP_COUNT_7DAY_AVG</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DEATH_COUNT_7DAY_AVG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DEATH_COUNT_7DAY_AVG]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>DEATH_COUNT_7DAY_AVG</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ALL_DEATH_COUNT_7DAY_AVG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ALL_DEATH_COUNT_7DAY_AVG]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>ALL_DEATH_COUNT_7DAY_AVG</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BX_CASE_COUNT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BX_CASE_COUNT]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>BX_CASE_COUNT</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BX_PROBABLE_CASE_COUNT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BX_PROBABLE_CASE_COUNT]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>BX_PROBABLE_CASE_COUNT</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BX_HOSPITALIZED_COUNT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BX_HOSPITALIZED_COUNT]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>BX_HOSPITALIZED_COUNT</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BX_DEATH_COUNT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BX_DEATH_COUNT]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>BX_DEATH_COUNT</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BX_PROBABLE_DEATH_COUNT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BX_PROBABLE_DEATH_COUNT]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>BX_PROBABLE_DEATH_COUNT</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BX_CASE_COUNT_7DAY_AVG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BX_CASE_COUNT_7DAY_AVG]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>BX_CASE_COUNT_7DAY_AVG</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BX_PROBABLE_CASE_COUNT_7DAY_AVG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BX_PROBABLE_CASE_COUNT_7DAY_AVG]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>BX_PROBABLE_CASE_COUNT_7DAY_AVG</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BX_ALL_CASE_COUNT_7DAY_AVG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BX_ALL_CASE_COUNT_7DAY_AVG]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>BX_ALL_CASE_COUNT_7DAY_AVG</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BX_HOSPITALIZED_COUNT_7DAY_AVG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BX_HOSPITALIZED_COUNT_7DAY_AVG]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>BX_HOSPITALIZED_COUNT_7DAY_AVG</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BX_DEATH_COUNT_7DAY_AVG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BX_DEATH_COUNT_7DAY_AVG]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>BX_DEATH_COUNT_7DAY_AVG</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BX_ALL_DEATH_COUNT_7DAY_AVG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BX_ALL_DEATH_COUNT_7DAY_AVG]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>BX_ALL_DEATH_COUNT_7DAY_AVG</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BK_CASE_COUNT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BK_CASE_COUNT]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>BK_CASE_COUNT</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BK_PROBABLE_CASE_COUNT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BK_PROBABLE_CASE_COUNT]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>BK_PROBABLE_CASE_COUNT</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BK_HOSPITALIZED_COUNT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BK_HOSPITALIZED_COUNT]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>BK_HOSPITALIZED_COUNT</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BK_DEATH_COUNT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BK_DEATH_COUNT]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>BK_DEATH_COUNT</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BK_PROBABLE_DEATH_COUNT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BK_PROBABLE_DEATH_COUNT]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>BK_PROBABLE_DEATH_COUNT</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BK_CASE_COUNT_7DAY_AVG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BK_CASE_COUNT_7DAY_AVG]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>BK_CASE_COUNT_7DAY_AVG</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BK_PROBABLE_CASE_COUNT_7DAY_AVG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BK_PROBABLE_CASE_COUNT_7DAY_AVG]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>BK_PROBABLE_CASE_COUNT_7DAY_AVG</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BK_ALL_CASE_COUNT_7DAY_AVG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BK_ALL_CASE_COUNT_7DAY_AVG]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>BK_ALL_CASE_COUNT_7DAY_AVG</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BK_HOSPITALIZED_COUNT_7DAY_AVG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BK_HOSPITALIZED_COUNT_7DAY_AVG]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>BK_HOSPITALIZED_COUNT_7DAY_AVG</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BK_DEATH_COUNT_7DAY_AVG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BK_DEATH_COUNT_7DAY_AVG]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>BK_DEATH_COUNT_7DAY_AVG</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BK_ALL_DEATH_COUNT_7DAY_AVG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BK_ALL_DEATH_COUNT_7DAY_AVG]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>BK_ALL_DEATH_COUNT_7DAY_AVG</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MN_CASE_COUNT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MN_CASE_COUNT]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>MN_CASE_COUNT</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MN_PROBABLE_CASE_COUNT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MN_PROBABLE_CASE_COUNT]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>MN_PROBABLE_CASE_COUNT</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MN_HOSPITALIZED_COUNT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MN_HOSPITALIZED_COUNT]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>MN_HOSPITALIZED_COUNT</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MN_DEATH_COUNT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MN_DEATH_COUNT]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>MN_DEATH_COUNT</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MN_PROBABLE_DEATH_COUNT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MN_PROBABLE_DEATH_COUNT]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>MN_PROBABLE_DEATH_COUNT</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MN_CASE_COUNT_7DAY_AVG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MN_CASE_COUNT_7DAY_AVG]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>MN_CASE_COUNT_7DAY_AVG</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MN_PROBABLE_CASE_COUNT_7DAY_AVG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MN_PROBABLE_CASE_COUNT_7DAY_AVG]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>MN_PROBABLE_CASE_COUNT_7DAY_AVG</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MN_ALL_CASE_COUNT_7DAY_AVG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MN_ALL_CASE_COUNT_7DAY_AVG]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>MN_ALL_CASE_COUNT_7DAY_AVG</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MN_HOSPITALIZED_COUNT_7DAY_AVG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MN_HOSPITALIZED_COUNT_7DAY_AVG]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>MN_HOSPITALIZED_COUNT_7DAY_AVG</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MN_DEATH_COUNT_7DAY_AVG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MN_DEATH_COUNT_7DAY_AVG]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>MN_DEATH_COUNT_7DAY_AVG</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MN_ALL_DEATH_COUNT_7DAY_AVG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MN_ALL_DEATH_COUNT_7DAY_AVG]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>MN_ALL_DEATH_COUNT_7DAY_AVG</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>QN_CASE_COUNT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[QN_CASE_COUNT]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>QN_CASE_COUNT</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>QN_PROBABLE_CASE_COUNT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[QN_PROBABLE_CASE_COUNT]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>QN_PROBABLE_CASE_COUNT</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>QN_HOSPITALIZED_COUNT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[QN_HOSPITALIZED_COUNT]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>QN_HOSPITALIZED_COUNT</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>QN_DEATH_COUNT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[QN_DEATH_COUNT]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>QN_DEATH_COUNT</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>QN_PROBABLE_DEATH_COUNT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[QN_PROBABLE_DEATH_COUNT]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>QN_PROBABLE_DEATH_COUNT</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>QN_CASE_COUNT_7DAY_AVG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[QN_CASE_COUNT_7DAY_AVG]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>QN_CASE_COUNT_7DAY_AVG</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>QN_PROBABLE_CASE_COUNT_7DAY_AVG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[QN_PROBABLE_CASE_COUNT_7DAY_AVG]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>QN_PROBABLE_CASE_COUNT_7DAY_AVG</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>QN_ALL_CASE_COUNT_7DAY_AVG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[QN_ALL_CASE_COUNT_7DAY_AVG]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>QN_ALL_CASE_COUNT_7DAY_AVG</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>QN_HOSPITALIZED_COUNT_7DAY_AVG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[QN_HOSPITALIZED_COUNT_7DAY_AVG]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>QN_HOSPITALIZED_COUNT_7DAY_AVG</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>QN_DEATH_COUNT_7DAY_AVG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[QN_DEATH_COUNT_7DAY_AVG]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>QN_DEATH_COUNT_7DAY_AVG</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>QN_ALL_DEATH_COUNT_7DAY_AVG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[QN_ALL_DEATH_COUNT_7DAY_AVG]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>QN_ALL_DEATH_COUNT_7DAY_AVG</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SI_CASE_COUNT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SI_CASE_COUNT]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>SI_CASE_COUNT</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SI_PROBABLE_CASE_COUNT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SI_PROBABLE_CASE_COUNT]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>SI_PROBABLE_CASE_COUNT</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SI_HOSPITALIZED_COUNT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SI_HOSPITALIZED_COUNT]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>SI_HOSPITALIZED_COUNT</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SI_DEATH_COUNT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SI_DEATH_COUNT]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>SI_DEATH_COUNT</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SI_PROBABLE_DEATH_COUNT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SI_PROBABLE_DEATH_COUNT]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>SI_PROBABLE_DEATH_COUNT</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SI_CASE_COUNT_7DAY_AVG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SI_CASE_COUNT_7DAY_AVG]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>SI_CASE_COUNT_7DAY_AVG</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SI_PROBABLE_CASE_COUNT_7DAY_AVG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SI_PROBABLE_CASE_COUNT_7DAY_AVG]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>SI_PROBABLE_CASE_COUNT_7DAY_AVG</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SI_ALL_CASE_COUNT_7DAY_AVG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SI_ALL_CASE_COUNT_7DAY_AVG]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>SI_ALL_CASE_COUNT_7DAY_AVG</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SI_HOSPITALIZED_COUNT_7DAY_AVG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SI_HOSPITALIZED_COUNT_7DAY_AVG]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>SI_HOSPITALIZED_COUNT_7DAY_AVG</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SI_DEATH_COUNT_7DAY_AVG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SI_DEATH_COUNT_7DAY_AVG]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>SI_DEATH_COUNT_7DAY_AVG</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SI_ALL_DEATH_COUNT_7DAY_AVG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SI_ALL_DEATH_COUNT_7DAY_AVG]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>SI_ALL_DEATH_COUNT_7DAY_AVG</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>INCOMPLETE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[INCOMPLETE]</local-name>
+            <parent-name>[data-by-day.csv]</parent-name>
+            <remote-alias>INCOMPLETE</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='All Case Count 7Day Avg' datatype='integer' name='[ALL_CASE_COUNT_7DAY_AVG]' role='measure' type='quantitative' />
+      <column caption='All Death Count 7Day Avg' datatype='integer' name='[ALL_DEATH_COUNT_7DAY_AVG]' role='measure' type='quantitative' />
+      <column caption='Bk All Case Count 7Day Avg' datatype='integer' name='[BK_ALL_CASE_COUNT_7DAY_AVG]' role='measure' type='quantitative' />
+      <column caption='Bk All Death Count 7Day Avg' datatype='integer' name='[BK_ALL_DEATH_COUNT_7DAY_AVG]' role='measure' type='quantitative' />
+      <column caption='Bk Case Count' datatype='integer' name='[BK_CASE_COUNT]' role='measure' type='quantitative' />
+      <column caption='Bk Case Count 7Day Avg' datatype='integer' name='[BK_CASE_COUNT_7DAY_AVG]' role='measure' type='quantitative' />
+      <column caption='Bk Death Count' datatype='integer' name='[BK_DEATH_COUNT]' role='measure' type='quantitative' />
+      <column caption='Bk Death Count 7Day Avg' datatype='integer' name='[BK_DEATH_COUNT_7DAY_AVG]' role='measure' type='quantitative' />
+      <column caption='Bk Hospitalized Count' datatype='integer' name='[BK_HOSPITALIZED_COUNT]' role='measure' type='quantitative' />
+      <column caption='Bk Hospitalized Count 7Day Avg' datatype='integer' name='[BK_HOSPITALIZED_COUNT_7DAY_AVG]' role='measure' type='quantitative' />
+      <column caption='Bk Probable Case Count' datatype='integer' name='[BK_PROBABLE_CASE_COUNT]' role='measure' type='quantitative' />
+      <column caption='Bk Probable Case Count 7Day Avg' datatype='integer' name='[BK_PROBABLE_CASE_COUNT_7DAY_AVG]' role='measure' type='quantitative' />
+      <column caption='Bk Probable Death Count' datatype='integer' name='[BK_PROBABLE_DEATH_COUNT]' role='measure' type='quantitative' />
+      <column caption='Bx All Case Count 7Day Avg' datatype='integer' name='[BX_ALL_CASE_COUNT_7DAY_AVG]' role='measure' type='quantitative' />
+      <column caption='Bx All Death Count 7Day Avg' datatype='integer' name='[BX_ALL_DEATH_COUNT_7DAY_AVG]' role='measure' type='quantitative' />
+      <column caption='Bx Case Count' datatype='integer' name='[BX_CASE_COUNT]' role='measure' type='quantitative' />
+      <column caption='Bx Case Count 7Day Avg' datatype='integer' name='[BX_CASE_COUNT_7DAY_AVG]' role='measure' type='quantitative' />
+      <column caption='Bx Death Count' datatype='integer' name='[BX_DEATH_COUNT]' role='measure' type='quantitative' />
+      <column caption='Bx Death Count 7Day Avg' datatype='integer' name='[BX_DEATH_COUNT_7DAY_AVG]' role='measure' type='quantitative' />
+      <column caption='Bx Hospitalized Count' datatype='integer' name='[BX_HOSPITALIZED_COUNT]' role='measure' type='quantitative' />
+      <column caption='Bx Hospitalized Count 7Day Avg' datatype='integer' name='[BX_HOSPITALIZED_COUNT_7DAY_AVG]' role='measure' type='quantitative' />
+      <column caption='Bx Probable Case Count' datatype='integer' name='[BX_PROBABLE_CASE_COUNT]' role='measure' type='quantitative' />
+      <column caption='Bx Probable Case Count 7Day Avg' datatype='integer' name='[BX_PROBABLE_CASE_COUNT_7DAY_AVG]' role='measure' type='quantitative' />
+      <column caption='Bx Probable Death Count' datatype='integer' name='[BX_PROBABLE_DEATH_COUNT]' role='measure' type='quantitative' />
+      <column caption='Case Count' datatype='integer' name='[CASE_COUNT]' role='measure' type='quantitative' />
+      <column caption='Case Count 7Day Avg' datatype='integer' name='[CASE_COUNT_7DAY_AVG]' role='measure' type='quantitative' />
+      <column caption='Death Count' datatype='integer' name='[DEATH_COUNT]' role='measure' type='quantitative' />
+      <column caption='Death Count 7Day Avg' datatype='integer' name='[DEATH_COUNT_7DAY_AVG]' role='measure' type='quantitative' />
+      <column caption='Hospitalized Count' datatype='integer' name='[HOSPITALIZED_COUNT]' role='measure' type='quantitative' />
+      <column caption='Hosp Count 7Day Avg' datatype='integer' name='[HOSP_COUNT_7DAY_AVG]' role='measure' type='quantitative' />
+      <column caption='Incomplete' datatype='integer' name='[INCOMPLETE]' role='measure' type='quantitative' />
+      <column caption='Mn All Case Count 7Day Avg' datatype='integer' name='[MN_ALL_CASE_COUNT_7DAY_AVG]' role='measure' type='quantitative' />
+      <column caption='Mn All Death Count 7Day Avg' datatype='integer' name='[MN_ALL_DEATH_COUNT_7DAY_AVG]' role='measure' type='quantitative' />
+      <column caption='Mn Case Count' datatype='integer' name='[MN_CASE_COUNT]' role='measure' type='quantitative' />
+      <column caption='Mn Case Count 7Day Avg' datatype='integer' name='[MN_CASE_COUNT_7DAY_AVG]' role='measure' type='quantitative' />
+      <column caption='Mn Death Count' datatype='integer' name='[MN_DEATH_COUNT]' role='measure' type='quantitative' />
+      <column caption='Mn Death Count 7Day Avg' datatype='integer' name='[MN_DEATH_COUNT_7DAY_AVG]' role='measure' type='quantitative' />
+      <column caption='Mn Hospitalized Count' datatype='integer' name='[MN_HOSPITALIZED_COUNT]' role='measure' type='quantitative' />
+      <column caption='Mn Hospitalized Count 7Day Avg' datatype='integer' name='[MN_HOSPITALIZED_COUNT_7DAY_AVG]' role='measure' type='quantitative' />
+      <column caption='Mn Probable Case Count' datatype='integer' name='[MN_PROBABLE_CASE_COUNT]' role='measure' type='quantitative' />
+      <column caption='Mn Probable Case Count 7Day Avg' datatype='integer' name='[MN_PROBABLE_CASE_COUNT_7DAY_AVG]' role='measure' type='quantitative' />
+      <column caption='Mn Probable Death Count' datatype='integer' name='[MN_PROBABLE_DEATH_COUNT]' role='measure' type='quantitative' />
+      <column caption='Probable Case Count' datatype='integer' name='[PROBABLE_CASE_COUNT]' role='measure' type='quantitative' />
+      <column caption='Probable Death Count' datatype='integer' name='[PROBABLE_DEATH_COUNT]' role='measure' type='quantitative' />
+      <column caption='Qn All Case Count 7Day Avg' datatype='integer' name='[QN_ALL_CASE_COUNT_7DAY_AVG]' role='measure' type='quantitative' />
+      <column caption='Qn All Death Count 7Day Avg' datatype='integer' name='[QN_ALL_DEATH_COUNT_7DAY_AVG]' role='measure' type='quantitative' />
+      <column caption='Qn Case Count' datatype='integer' name='[QN_CASE_COUNT]' role='measure' type='quantitative' />
+      <column caption='Qn Case Count 7Day Avg' datatype='integer' name='[QN_CASE_COUNT_7DAY_AVG]' role='measure' type='quantitative' />
+      <column caption='Qn Death Count' datatype='integer' name='[QN_DEATH_COUNT]' role='measure' type='quantitative' />
+      <column caption='Qn Death Count 7Day Avg' datatype='integer' name='[QN_DEATH_COUNT_7DAY_AVG]' role='measure' type='quantitative' />
+      <column caption='Qn Hospitalized Count' datatype='integer' name='[QN_HOSPITALIZED_COUNT]' role='measure' type='quantitative' />
+      <column caption='Qn Hospitalized Count 7Day Avg' datatype='integer' name='[QN_HOSPITALIZED_COUNT_7DAY_AVG]' role='measure' type='quantitative' />
+      <column caption='Qn Probable Case Count' datatype='integer' name='[QN_PROBABLE_CASE_COUNT]' role='measure' type='quantitative' />
+      <column caption='Qn Probable Case Count 7Day Avg' datatype='integer' name='[QN_PROBABLE_CASE_COUNT_7DAY_AVG]' role='measure' type='quantitative' />
+      <column caption='Qn Probable Death Count' datatype='integer' name='[QN_PROBABLE_DEATH_COUNT]' role='measure' type='quantitative' />
+      <column caption='Si All Case Count 7Day Avg' datatype='integer' name='[SI_ALL_CASE_COUNT_7DAY_AVG]' role='measure' type='quantitative' />
+      <column caption='Si All Death Count 7Day Avg' datatype='integer' name='[SI_ALL_DEATH_COUNT_7DAY_AVG]' role='measure' type='quantitative' />
+      <column caption='Si Case Count' datatype='integer' name='[SI_CASE_COUNT]' role='measure' type='quantitative' />
+      <column caption='Si Case Count 7Day Avg' datatype='integer' name='[SI_CASE_COUNT_7DAY_AVG]' role='measure' type='quantitative' />
+      <column caption='Si Death Count' datatype='integer' name='[SI_DEATH_COUNT]' role='measure' type='quantitative' />
+      <column caption='Si Death Count 7Day Avg' datatype='integer' name='[SI_DEATH_COUNT_7DAY_AVG]' role='measure' type='quantitative' />
+      <column caption='Si Hospitalized Count' datatype='integer' name='[SI_HOSPITALIZED_COUNT]' role='measure' type='quantitative' />
+      <column caption='Si Hospitalized Count 7Day Avg' datatype='integer' name='[SI_HOSPITALIZED_COUNT_7DAY_AVG]' role='measure' type='quantitative' />
+      <column caption='Si Probable Case Count' datatype='integer' name='[SI_PROBABLE_CASE_COUNT]' role='measure' type='quantitative' />
+      <column caption='Si Probable Case Count 7Day Avg' datatype='integer' name='[SI_PROBABLE_CASE_COUNT_7DAY_AVG]' role='measure' type='quantitative' />
+      <column caption='Si Probable Death Count' datatype='integer' name='[SI_PROBABLE_DEATH_COUNT]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='data-by-day.csv' datatype='table' name='[__tableau_internal_object_id__].[data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6]' role='measure' type='quantitative' />
+      <column caption='Date Of Interest' datatype='date' name='[date_of_interest]' role='dimension' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;China&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='data-by-day.csv' id='data-by-day.csv_F1D0BF709EC447BF9173AD44B37D6FF6'>
+            <properties context=''>
+              <relation connection='textscan.1fpnyt813j3bnj18fzvae0begf7z' name='data-by-day.csv' table='[data-by-day#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+                  <column datatype='date' name='date_of_interest' ordinal='0' />
+                  <column datatype='integer' name='CASE_COUNT' ordinal='1' />
+                  <column datatype='integer' name='PROBABLE_CASE_COUNT' ordinal='2' />
+                  <column datatype='integer' name='HOSPITALIZED_COUNT' ordinal='3' />
+                  <column datatype='integer' name='DEATH_COUNT' ordinal='4' />
+                  <column datatype='integer' name='PROBABLE_DEATH_COUNT' ordinal='5' />
+                  <column datatype='integer' name='CASE_COUNT_7DAY_AVG' ordinal='6' />
+                  <column datatype='integer' name='ALL_CASE_COUNT_7DAY_AVG' ordinal='7' />
+                  <column datatype='integer' name='HOSP_COUNT_7DAY_AVG' ordinal='8' />
+                  <column datatype='integer' name='DEATH_COUNT_7DAY_AVG' ordinal='9' />
+                  <column datatype='integer' name='ALL_DEATH_COUNT_7DAY_AVG' ordinal='10' />
+                  <column datatype='integer' name='BX_CASE_COUNT' ordinal='11' />
+                  <column datatype='integer' name='BX_PROBABLE_CASE_COUNT' ordinal='12' />
+                  <column datatype='integer' name='BX_HOSPITALIZED_COUNT' ordinal='13' />
+                  <column datatype='integer' name='BX_DEATH_COUNT' ordinal='14' />
+                  <column datatype='integer' name='BX_PROBABLE_DEATH_COUNT' ordinal='15' />
+                  <column datatype='integer' name='BX_CASE_COUNT_7DAY_AVG' ordinal='16' />
+                  <column datatype='integer' name='BX_PROBABLE_CASE_COUNT_7DAY_AVG' ordinal='17' />
+                  <column datatype='integer' name='BX_ALL_CASE_COUNT_7DAY_AVG' ordinal='18' />
+                  <column datatype='integer' name='BX_HOSPITALIZED_COUNT_7DAY_AVG' ordinal='19' />
+                  <column datatype='integer' name='BX_DEATH_COUNT_7DAY_AVG' ordinal='20' />
+                  <column datatype='integer' name='BX_ALL_DEATH_COUNT_7DAY_AVG' ordinal='21' />
+                  <column datatype='integer' name='BK_CASE_COUNT' ordinal='22' />
+                  <column datatype='integer' name='BK_PROBABLE_CASE_COUNT' ordinal='23' />
+                  <column datatype='integer' name='BK_HOSPITALIZED_COUNT' ordinal='24' />
+                  <column datatype='integer' name='BK_DEATH_COUNT' ordinal='25' />
+                  <column datatype='integer' name='BK_PROBABLE_DEATH_COUNT' ordinal='26' />
+                  <column datatype='integer' name='BK_CASE_COUNT_7DAY_AVG' ordinal='27' />
+                  <column datatype='integer' name='BK_PROBABLE_CASE_COUNT_7DAY_AVG' ordinal='28' />
+                  <column datatype='integer' name='BK_ALL_CASE_COUNT_7DAY_AVG' ordinal='29' />
+                  <column datatype='integer' name='BK_HOSPITALIZED_COUNT_7DAY_AVG' ordinal='30' />
+                  <column datatype='integer' name='BK_DEATH_COUNT_7DAY_AVG' ordinal='31' />
+                  <column datatype='integer' name='BK_ALL_DEATH_COUNT_7DAY_AVG' ordinal='32' />
+                  <column datatype='integer' name='MN_CASE_COUNT' ordinal='33' />
+                  <column datatype='integer' name='MN_PROBABLE_CASE_COUNT' ordinal='34' />
+                  <column datatype='integer' name='MN_HOSPITALIZED_COUNT' ordinal='35' />
+                  <column datatype='integer' name='MN_DEATH_COUNT' ordinal='36' />
+                  <column datatype='integer' name='MN_PROBABLE_DEATH_COUNT' ordinal='37' />
+                  <column datatype='integer' name='MN_CASE_COUNT_7DAY_AVG' ordinal='38' />
+                  <column datatype='integer' name='MN_PROBABLE_CASE_COUNT_7DAY_AVG' ordinal='39' />
+                  <column datatype='integer' name='MN_ALL_CASE_COUNT_7DAY_AVG' ordinal='40' />
+                  <column datatype='integer' name='MN_HOSPITALIZED_COUNT_7DAY_AVG' ordinal='41' />
+                  <column datatype='integer' name='MN_DEATH_COUNT_7DAY_AVG' ordinal='42' />
+                  <column datatype='integer' name='MN_ALL_DEATH_COUNT_7DAY_AVG' ordinal='43' />
+                  <column datatype='integer' name='QN_CASE_COUNT' ordinal='44' />
+                  <column datatype='integer' name='QN_PROBABLE_CASE_COUNT' ordinal='45' />
+                  <column datatype='integer' name='QN_HOSPITALIZED_COUNT' ordinal='46' />
+                  <column datatype='integer' name='QN_DEATH_COUNT' ordinal='47' />
+                  <column datatype='integer' name='QN_PROBABLE_DEATH_COUNT' ordinal='48' />
+                  <column datatype='integer' name='QN_CASE_COUNT_7DAY_AVG' ordinal='49' />
+                  <column datatype='integer' name='QN_PROBABLE_CASE_COUNT_7DAY_AVG' ordinal='50' />
+                  <column datatype='integer' name='QN_ALL_CASE_COUNT_7DAY_AVG' ordinal='51' />
+                  <column datatype='integer' name='QN_HOSPITALIZED_COUNT_7DAY_AVG' ordinal='52' />
+                  <column datatype='integer' name='QN_DEATH_COUNT_7DAY_AVG' ordinal='53' />
+                  <column datatype='integer' name='QN_ALL_DEATH_COUNT_7DAY_AVG' ordinal='54' />
+                  <column datatype='integer' name='SI_CASE_COUNT' ordinal='55' />
+                  <column datatype='integer' name='SI_PROBABLE_CASE_COUNT' ordinal='56' />
+                  <column datatype='integer' name='SI_HOSPITALIZED_COUNT' ordinal='57' />
+                  <column datatype='integer' name='SI_DEATH_COUNT' ordinal='58' />
+                  <column datatype='integer' name='SI_PROBABLE_DEATH_COUNT' ordinal='59' />
+                  <column datatype='integer' name='SI_CASE_COUNT_7DAY_AVG' ordinal='60' />
+                  <column datatype='integer' name='SI_PROBABLE_CASE_COUNT_7DAY_AVG' ordinal='61' />
+                  <column datatype='integer' name='SI_ALL_CASE_COUNT_7DAY_AVG' ordinal='62' />
+                  <column datatype='integer' name='SI_HOSPITALIZED_COUNT_7DAY_AVG' ordinal='63' />
+                  <column datatype='integer' name='SI_DEATH_COUNT_7DAY_AVG' ordinal='64' />
+                  <column datatype='integer' name='SI_ALL_DEATH_COUNT_7DAY_AVG' ordinal='65' />
+                  <column datatype='integer' name='INCOMPLETE' ordinal='66' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Manhattan'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data-by-day' name='federated.1ds8l6v0rheg0c18onai80nznepf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ds8l6v0rheg0c18onai80nznepf'>
+            <column caption='Mn Case Count' datatype='integer' name='[MN_CASE_COUNT]' role='measure' type='quantitative' />
+            <column caption='Mn Death Count' datatype='integer' name='[MN_DEATH_COUNT]' role='measure' type='quantitative' />
+            <column caption='Mn Hospitalized Count' datatype='integer' name='[MN_HOSPITALIZED_COUNT]' role='measure' type='quantitative' />
+            <column caption='Date Of Interest' datatype='date' name='[date_of_interest]' role='dimension' type='ordinal' />
+            <column-instance column='[date_of_interest]' derivation='Month' name='[mn:date_of_interest:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[MN_CASE_COUNT]' derivation='Sum' name='[sum:MN_CASE_COUNT:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[MN_DEATH_COUNT]' derivation='Sum' name='[sum:MN_DEATH_COUNT:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[MN_HOSPITALIZED_COUNT]' derivation='Sum' name='[sum:MN_HOSPITALIZED_COUNT:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1ds8l6v0rheg0c18onai80nznepf].[sum:MN_CASE_COUNT:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1ds8l6v0rheg0c18onai80nznepf].[sum:MN_DEATH_COUNT:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#4e79a7' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1ds8l6v0rheg0c18onai80nznepf].[sum:MN_HOSPITALIZED_COUNT:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#59a14f' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1ds8l6v0rheg0c18onai80nznepf].[sum:MN_CASE_COUNT:qk] + ([federated.1ds8l6v0rheg0c18onai80nznepf].[sum:MN_DEATH_COUNT:qk] + [federated.1ds8l6v0rheg0c18onai80nznepf].[sum:MN_HOSPITALIZED_COUNT:qk]))</rows>
+        <cols>[federated.1ds8l6v0rheg0c18onai80nznepf].[mn:date_of_interest:ok]</cols>
+      </table>
+      <simple-id uuid='{76544A7A-E163-4B15-8EC3-46EFBD00572F}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data-by-day' name='federated.1ds8l6v0rheg0c18onai80nznepf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ds8l6v0rheg0c18onai80nznepf'>
+            <column caption='Case Count' datatype='integer' name='[CASE_COUNT]' role='measure' type='quantitative' />
+            <column caption='Death Count' datatype='integer' name='[DEATH_COUNT]' role='measure' type='quantitative' />
+            <column caption='Hospitalized Count' datatype='integer' name='[HOSPITALIZED_COUNT]' role='measure' type='quantitative' />
+            <column-instance column='[CASE_COUNT]' derivation='Avg' name='[avg:CASE_COUNT:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[DEATH_COUNT]' derivation='Avg' name='[avg:DEATH_COUNT:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[HOSPITALIZED_COUNT]' derivation='Avg' name='[avg:HOSPITALIZED_COUNT:qk]' pivot='key' type='quantitative' />
+            <column caption='Date Of Interest' datatype='date' name='[date_of_interest]' role='dimension' type='ordinal' />
+            <column-instance column='[date_of_interest]' derivation='Month' name='[mn:date_of_interest:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1ds8l6v0rheg0c18onai80nznepf].[avg:CASE_COUNT:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1ds8l6v0rheg0c18onai80nznepf].[avg:DEATH_COUNT:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1ds8l6v0rheg0c18onai80nznepf].[avg:HOSPITALIZED_COUNT:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#59a14f' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1ds8l6v0rheg0c18onai80nznepf].[avg:CASE_COUNT:qk] + ([federated.1ds8l6v0rheg0c18onai80nznepf].[avg:DEATH_COUNT:qk] + [federated.1ds8l6v0rheg0c18onai80nznepf].[avg:HOSPITALIZED_COUNT:qk]))</rows>
+        <cols>[federated.1ds8l6v0rheg0c18onai80nznepf].[mn:date_of_interest:ok]</cols>
+      </table>
+      <simple-id uuid='{E4FB4584-CA4E-48EA-9EF1-7BF9C6842F97}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Manhattan'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ds8l6v0rheg0c18onai80nznepf].[yr:date_of_interest:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{43DB446F-1345-427B-85B4-87C6FB6630F6}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ds8l6v0rheg0c18onai80nznepf].[yr:date_of_interest:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{75AEAF6E-75FD-4356-8BC8-45B4A8BBC664}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Manhattan' width='384'>
+      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
+      QmCC
+    </thumbnail>
+    <thumbnail height='384' name='Sheet 2' width='384'>
+      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
+      QmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>

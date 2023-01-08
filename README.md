@@ -2,6 +2,12 @@
 
 Final project to explore the characteristics of covid-19.
 
+| Course Code | CSCI-GA.3033-096 |
+| :---------: | :--------------: |
+| Course name | Special Topics: Data Analytics and Visualization in Healthcare | 
+| Professor   | Maria Lorena Carlo Unda    |
+| Term        | NYU 2022 fall    |
+
 ## Visualizations
 
 - Tendency of cases and deacths in developed and developing cities

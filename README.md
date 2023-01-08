@@ -6,6 +6,7 @@ Final project to explore the characteristics of covid-19.
 | :---------: | :--------------: |
 | Course name | Special Topics: Data Analytics and Visualization in Healthcare | 
 | Professor   | Maria Lorena Carlo Unda    |
+| Author      | Xiao Ma, Yiran Ma, Meng chen |
 | Term        | NYU 2022 fall    |
 
 ## Visualizations
